@@ -1,0 +1,34 @@
+.full-width{
+    width: 80%;
+    
+}
+.container{
+    padding-bottom: 15px;
+    text-align: center;
+    
+}
+
+.button{
+    text-align: center;
+    padding-bottom: 20px;
+   
+}
+.lastline{
+    text-align: center;
+}
+.card{
+    background: url(../../../assets/signup.jpg);
+}
+.card h1{
+    color: navy;
+}
+mat-label{
+    color: navy;
+}
+
+
+ 
+
+
+  
+

@@ -1,0 +1,33 @@
+<div class="bootstrap-wrapper mt20">
+    <table class="table table-success table-striped" >
+      <thead>
+        <tr>
+          <th scope="col">Result</th>
+          <th scope="col">Quiz Name</th>
+          <th scope="col">User Name</th>
+          <th scope="col">Question Attempted</th>
+          <th scope="col">Correct Answer</th>
+          <th scope="col">Mark Scored</th>
+          <th scope="col">Submit Date Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let r of result">
+          <th scope="row">{{r.result_id}}</th>
+          <td>{{r.quiz.title}}</td>
+          <td>{{r.user.firstname + " "+r.user.lastname}}</td>
+          <td>{{r.qAttempted}}</td>
+          <td>{{r.correctAns}}</td>
+          <td>{{r.marksScored}}</td>
+          <td>{{r.submitDateTime}}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div class="conainer text-center mt20">
+      <button mat-raised-button color="primary" routerLink="/user-dashboard">Home</button>
+  
+      <button class="ml20" (click)="printPage()" mat-raised-button color="primary" >Print page</button>
+  </div>
+  
+  </div>

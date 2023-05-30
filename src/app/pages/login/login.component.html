@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-6 offset-md-3">
+             <mat-card class="card">
+                <div class="text-center">
+                    <img style="width: 120px;" src="../../../assets/login.png" >
+                </div>
+                <h1 class="text-center">Login Here !!</h1>
+                <!-- {{loginData | json}} -->
+                <form (ngSubmit)="formSubmit()" >
+                    <!--username -->
+                   <mat-form-field class="full-width" appearance="outline">
+                   <mat-label>Username</mat-label>
+                   <input 
+                        [(ngModel)]="loginData.username"
+                        name="Username"
+                        matInput placeholder="Enter Here"
+                        type="text"
+                        required >
+                   </mat-form-field>
+                   <!-- Password -->
+                   <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input 
+                         [(ngModel)]="loginData.password"
+                         name="password"
+                         matInput placeholder="Enter Here"
+                         type="password"
+                         required >
+                    </mat-form-field>
+                      <div class="button">
+                        <button type="submit" mat-raised-button style="background-color: darkgreen; margin-right: 10px; color: #fff;"  >Submit</button>
+                        <button type="reset"  mat-raised-button color="accent">Reset</button>
+                      </div>
+                </form>
+                <a style="color: teal;margin-top: 10px;margin-bottom: 30px;text-align: center;" routerLink="/signup">New User? Click to Register!!</a>
+             </mat-card>
+        </div>
+    </div>
+</div>

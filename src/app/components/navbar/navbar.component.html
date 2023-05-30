@@ -1,0 +1,32 @@
+
+  <mat-toolbar class="toolbar">
+    <a    
+         *ngIf="!isLoggedIn"
+         routerLink="/"
+         mat-icon-button class="example-icon" 
+         aria-label="Example icon-button with menu icon">
+      <mat-icon>menu_book</mat-icon>
+    </a>
+    <span>Examportal</span>
+    <span class="example-spacer"></span>
+
+    <span *ngIf="!isLoggedIn" routerLink="/login" class="mr10 radius">
+    Login
+  </span>
+  <span *ngIf="!isLoggedIn" routerLink="/signup" class="mr10 radius">
+    Signup
+  </span>
+  
+  <p>
+    <span *ngIf="isLoggedIn && user" class="radius"
+    routerLink="/admin-dashboard/profile"
+    mat-icon-button>
+      {{ user.username }}
+    </span>
+  </p>
+
+  <p>
+    <span *ngIf="isLoggedIn" (click)="logout()" class="radius"> Logout </span>
+  </p>
+
+  </mat-toolbar>

@@ -1,0 +1,30 @@
+.aligned-with-icon{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px; /* optional */
+}
+.container{
+    padding: 10px;
+}
+.button{
+    margin-bottom: 20px;
+    text-align:center;
+    
+}
+.center-button{
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    
+}
+.header{
+    padding: 10px;
+}
+.example-header-image {
+    background-image: url('../../../../assets/list.png');
+    background-size: cover;
+  }
+.w80{
+    width:100%;
+}

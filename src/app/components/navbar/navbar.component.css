@@ -1,0 +1,21 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .ml20{
+   margin-left: 20px !important;
+  }
+  .mr20{
+    margin-right: 20px !important;
+  }
+  .toolbar{
+    background: teal !important;
+    color: #fff;
+  }
+  .radius {
+    border-radius: 15px;
+    font-size: 20px;
+    margin-right: 24px;
+  }
+
+  
+ 

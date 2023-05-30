@@ -1,0 +1,13 @@
+.mt10{
+    margin-top: 10px !important;
+}
+.ml20{
+    margin-left: 20px;
+}
+.mr20{
+    margin-right: 20px;
+}
+.header-image {
+    background-image: url('../../../../assets/quiz.png');
+    background-size: cover;
+  }

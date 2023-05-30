@@ -1,0 +1,46 @@
+<div class="bootstrap-wrapper">
+    <div class="conatiner-fluid">
+        <h1>Available Quiz</h1>
+        <div class="row" *ngIf="quizzes" >
+              <div class="col-md-4" *ngFor="let q of quizzes" >
+
+                <mat-card class="mt20">
+                    <mat-card-header>
+                        <div mat-card-avatar class="image"></div>
+                        <mat-card-title>
+                            {{q.title}}
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                            {{q.category.title}}
+                        </mat-card-subtitle>
+                    </mat-card-header>
+                    <!-- show only 1 line if content greter then after three line "truncate"..... -->
+                    <mat-card-content>
+                        <p class="truncate">{{q.description}}</p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button color="accent" [routerLink]="'/user-dashboard/instruction/'+q.qid" >View</button>
+
+                        <button mat-button color="primary" >
+                            Max Marks: {{q.maxMarks}}
+                         </button>
+ 
+                         <button mat-button color="primary" >
+                             Q: {{q.noOfQuestions}}
+                         </button>
+                    </mat-card-actions>
+                    
+                </mat-card>
+              </div>
+
+              <div class="col-md-12" *ngIf="quizzes.length == 0">
+                <mat-card>
+                    
+                    <mat-card-content>
+                        <h3>No data in this category</h3>
+                    </mat-card-content>
+                </mat-card>
+              </div>
+        </div>
+    </div>
+</div>
